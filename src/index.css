@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/*body{
+body{
   background-color: #000300;
 }
-*/
+
 .newsletter-paragraph {
   max-width: 55%;
 }

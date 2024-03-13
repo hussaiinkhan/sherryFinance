@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactTyped } from "react-typed";
+
 
 function Newsletter() {
   return (
@@ -9,26 +9,12 @@ function Newsletter() {
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
       <div className="max-w-xl lg:max-w-lg">
-         <div className='flex justify-center items-center'>
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mt-3">Grow with data.</h2>
-        </div>
-        <div className='flex justify-center items-center'>
-            <p className="font-bold mt-4 text-lg leading-8 text-gray-300">Fast,flexible financing for</p>
-            <ReactTyped className=' font-bold mt-4 text-lg leading-8 text-gray-300 pl-1'
-                strings={[
-                    "BTB",
-                    "BTC",
-                    "SASS",
-                ]}
-                typeSpeed={120}
-                backSpeed={140}
-                placeholder=""
-                loop
-        > 
-        </ReactTyped>
-        </div>
-        <div className='flex justify-center items-center'>
-        <p className="mt-1 pl-5 leading-7 text-gray-400 newsletter-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis varius nisi.</p>
+      <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mt-2">Subscribe to our newsletter.</h2>
+        <p className="mt-4 text-lg leading-8 text-gray-300">Stay updated with the latest news, insights, and offers from our platform.</p>
+        <div className="mt-6 flex max-w-md gap-x-4">
+          <label htmlFor="email-address" className="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autoComplete="email" required className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email"/>
+          <button type="submit" className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
         </div>
         
         
