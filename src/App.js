@@ -1,19 +1,29 @@
 import React from 'react'
 import Navbar from './Navbar';
-import Newsletter from './Newsletter';
-import Hero from './Hero';
-import Analytics from './Analytics';
-import CardConatiner from './CardConatiner';
+
+import About from './About';
+import Footer from './Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Contact from './Contact';
 
 
 function App() {
   return (
     <div className="App">
+      <Router>
       <Navbar/>
-      <Hero/>
-      <Analytics/>
-      <CardConatiner/>
-      <Newsletter/>
+      
+      <>
+        <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/about" element={<About/>}/>
+        <Route exact path="/contact" element={<Contact/>}/>
+        </Routes>
+        <Footer/>
+      </>
+      
+      </Router>
     </div>
   );
 }
